@@ -1,0 +1,16 @@
+version: "3.2"
+services:
+  rockmongo:
+    image: jhaoheng/rockmongo
+    container_name: rockmongo
+    ports:
+      - 27018:80
+    volumes:
+      - ./config.php:/app/config.php
+    networks:
+      - mongo
+
+networks:
+  mongo:
+    external: 
+      name: mongo
