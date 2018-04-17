@@ -5,3 +5,7 @@
 2. `docker-compose up -d`
 3. browser : 'http://localhost:27018'
   - default admin/admin
+
+![img1](img1.png)
+
+![img2](img2.png)
