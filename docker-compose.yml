@@ -9,6 +9,15 @@ services:
       - ./config.php:/app/config.php
     networks:
       - mongo
+      
+  mongo:
+    image: mongo:3.7.3
+    container_name: mongo
+    ports:
+      - 27017:27017/tcp
+    networks:
+      - mongo
+    restart: always
 
 networks:
   mongo:
